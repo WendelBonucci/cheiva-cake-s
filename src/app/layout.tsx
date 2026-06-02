@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "@/components/layout/Header/Header";
 
 export const metadata = {
   title: "Cheiva Cake'S | Confeitaria de Bolos, Doces e Sobremesas",
@@ -65,7 +66,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR"className={''}>
+    <html lang="pt-BR" className={''}>
+      <Header />
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

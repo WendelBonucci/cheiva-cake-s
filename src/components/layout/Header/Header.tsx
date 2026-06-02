@@ -10,7 +10,7 @@ export default function Header() {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        const checkScreen = () => setIsMobile(window.innerWidth <= 748);
+        const checkScreen = () => setIsMobile(window.innerWidth <= 768); // Ajustado para o padrão md (768px)
         checkScreen();
 
         const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -24,23 +24,24 @@ export default function Header() {
     }, []);
 
     return (
-        <header
-            className={`fixed top-0 w-full z-50 transition-all duration-500 border-b 
-            ${scrolled
-                    ? "h-16 bg-white/80 backdrop-blur-md border-gray/20 shadow-md"
-                    : "h-24 bg-white border-transparent"}`}>
-            <div className="" />
+        <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 border-b flex items-center
+            ${scrolled ? "h-16 bg-white/95 backdrop-blur-md border-black/5 shadow-sm" : "h-24 bg-transparent border-transparent"}`}>
+            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
 
-            <section className="">
+                <div className="shrink-0"><Logo /></div>
 
-                <div className=""><Logo /></div>
-
-                <div className=""><Navigation /></div>
-
-                {isMobile && (
-                    <div className=""><Sidebar /></div>
+                {!isMobile ? (
+                    <div className="flex items-center gap-8">
+                        <Navigation />
+                        <div className="h-6 w-px bg-black/10" />
+                        <Buttons />
+                    </div>
+                ) : (
+                    <div className="flex items-center">
+                        <Sidebar />
+                    </div>
                 )}
-            </section>
+            </div>
         </header>
     );
 }
