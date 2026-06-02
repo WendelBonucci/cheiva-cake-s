@@ -4,7 +4,7 @@ import Logo from "./Sections/Logo";
 import Navigation from "./Sections/Navigation";
 import Buttons from "./Sections/Buttons";
 import Sidebar from "./Sections/Sidebar";
-import SeachBar from "./Sections/SeachBar"; // Corrigido o import para bater com seu arquivo se necessário
+import SeachBar from "./Sections/SeachBar";
 import Departament from "./Sections/Departament";
 
 export default function Header() {
