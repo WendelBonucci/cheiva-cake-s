@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+}
+
+
+@theme inline {
+  --color-background: #f2f2f2;
+  --color-black: #0D0D0D;
+  --color-white: #FFFFFF;
+  --color-blue: #23B7D9;
+  --color-green: #1FA65A;
+  --color-beige: #F2E2CE;
+  --color-red: #F23030;
+}
+
+body {
+  max-width: 100%;
+}
