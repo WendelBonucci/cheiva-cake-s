@@ -1,7 +1,11 @@
-import React from 'react'
+import Link from "next/link"
 
 export default function Logo() {
     return (
-        <div>Logo</div>
+        <section className=''>
+            <div className=''>
+                <Link href='/'>Cheiva Cake's</Link>
+            </div>
+        </section>
     )
 }
