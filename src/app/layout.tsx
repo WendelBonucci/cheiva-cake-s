@@ -34,7 +34,7 @@ export const metadata = {
   ],
 
   icons: {
-    icon: "/logoHeader.png",
+    icon: "/logocheivacakes.png",
   },
 
   openGraph: {
