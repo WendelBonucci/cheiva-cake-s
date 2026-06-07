@@ -9,10 +9,10 @@ export default async function CardsProducts() {
     // 1. Mapeamento de Imagens Locais usando o ID do documento no Firebase
     // Substitua as chaves pelos IDs reais gerados no seu banco
     const localImages: Record<string, string> = {
-        "id_do_produto_1": "/produtos/bolo-cenoura.png",
-        "id_do_produto_2": "/produtos/torta-chocolate.png",
-        "id_do_produto_3": "/produtos/red-velvet.png",
-        "id_do_produto_4": "/produtos/cupcake-morango.png",
+        "4xmSmhkRPw60BaHTBplN": "/bolodechocolate.png",
+        "Vj3uoWiYqIeyyauvxqfP": "/bolodelimao.png",
+        "pdNbqvN8SIeYFRzu8WV7": "/bolodemorango.png",
+        "HLh9oRtWMVEk6eoPmzei": "/bolodechocolatebranco.png",
     };
 
     // Imagem padrão caso o ID não exista no objeto acima

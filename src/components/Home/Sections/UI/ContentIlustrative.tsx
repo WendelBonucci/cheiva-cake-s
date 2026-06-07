@@ -10,8 +10,8 @@ export default function ContentIlustrative() {
 
     const Images: ImagesType[] = [
         { id: 1, image: '/ilustrativeImg1.png', alt: 'Nossos ingredientes selecionados' },
-        { id: 2, image: '/ilustrativeImg2.png', alt: 'Processo artesanal de produção' },
-        { id: 3, image: '/ilustrativeImg3.png', alt: 'Amor em cada detalhe confeitado' },
+        { id: 2, image: '/ilustrativeImg3.png', alt: 'Processo artesanal de produção' },
+        { id: 3, image: '/ilustrativeImg2.png', alt: 'Amor em cada detalhe confeitado' },
     ]
 
     return (
