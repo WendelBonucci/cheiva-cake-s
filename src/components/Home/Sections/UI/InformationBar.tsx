@@ -1,5 +1,4 @@
 "use client";
-import React from 'react';
 import Link from 'next/link';
 import { FiPercent, FiTruck, FiUserPlus, FiGift } from 'react-icons/fi';
 import { IconType } from 'react-icons';
