@@ -7,8 +7,8 @@ import Link from "next/link";
 const MOCK_PRODUTOS = [
     {
         id: "1",
-        nome: "Bolo Caseiro de Cenoura com Chocolate",
-        preco: 29.9,
+        nome: "Bolo de Chocolate Artesanal",
+        preco: 79.90,
         categoria: "Bolos",
     },
     {
