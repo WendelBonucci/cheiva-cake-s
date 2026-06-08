@@ -15,9 +15,9 @@ export default function Carousel() {
     }
 
     const bannerItems: CarouselType[] = [
-        { id: 1, desktopImage: '/slide01.png', mobileImage: '/banner1-mobile.png', alt: 'Destaque Bolos Caseiros' },
-        { id: 2, desktopImage: '/slide02.png', mobileImage: '/banner2-mobile.png', alt: 'Sobremesas Especiais' },
-        { id: 3, desktopImage: '/slide03.png', mobileImage: '/banner3-mobile.png', alt: 'Faça seu Pedido' },
+        { id: 1, desktopImage: '/slide01.png', mobileImage: '/mobile01.png', alt: 'Destaque Bolos Caseiros' },
+        { id: 2, desktopImage: '/slide02.png', mobileImage: '/mobile02.png', alt: 'Sobremesas Especiais' },
+        { id: 3, desktopImage: '/slide03.png', mobileImage: '/mobile03.png', alt: 'Faça seu Pedido' },
     ]
 
     return (
