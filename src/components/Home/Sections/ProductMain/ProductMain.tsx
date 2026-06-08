@@ -14,13 +14,12 @@ interface ProductType {
 }
 
 interface ProductPageProps {
-    params: Promise<{ id: string }> | { id: string };
+    readonly params: Promise<{ readonly id: string }> | { readonly id: string };
 }
 
-export default async function ProductPage({ params }: ProductPageProps) {
-    // Resolve os parâmetros de rota de forma assíncrona com segurança
+export default async function ProductMain({ params }: ProductPageProps) {
     const resolvedParams = await params;
-    const productId = resolvedParams?.id || "4xmSmhkRPw60BaHTBplN";
+    const productId = resolvedParams.id;
 
     // Busca os produtos e tipa o retorno explicitamente como um array de ProductType
     const products = (await getProducts()) as ProductType[];
