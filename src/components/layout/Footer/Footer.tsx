@@ -9,7 +9,6 @@ export default function Footer() {
         icon?: React.ReactNode;
     };
 
-    // Adicionado ícones para as redes sociais e preenchimento de hrefs genéricos para teste
     const SocialLink: FooterType[] = [
         { id: 1, label: 'Instagram', href: '#', icon: <FaInstagram size={18} /> },
         { id: 2, label: 'Facebook', href: '#', icon: <FaFacebookF size={16} /> },
