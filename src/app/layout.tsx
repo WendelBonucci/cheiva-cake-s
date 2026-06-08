@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/layout/Header/Header";
+import Chatbot from "@/components/layout/Messeger/Messeger";
 
 export const metadata = {
   title: "Cheiva Cake'S | Confeitaria de Bolos, Doces e Sobremesas",
@@ -69,6 +70,7 @@ export default function RootLayout({
     <html lang="pt-BR" className={''}>
       <Header />
       <body className="min-h-full flex flex-col">{children}</body>
+      <Chatbot />
     </html>
   );
 }
