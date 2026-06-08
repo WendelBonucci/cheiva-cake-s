@@ -3,11 +3,19 @@ import Link from "next/link";
 import { FiArrowRight } from "react-icons/fi";
 import { getProducts } from "@/services/Product/Product";
 
+// Interface para garantir a consistência das propriedades vindas do banco
+interface ProductType {
+    id: string;
+    nome: string;
+    preco: number | string;
+    descricao?: string;
+}
+
 export default async function CardsProducts() {
-    const products = await getProducts();
+    // Tipamos explicitamente o retorno do Firebase
+    const products = (await getProducts()) as ProductType[];
 
     // 1. Mapeamento de Imagens Locais usando o ID do documento no Firebase
-    // Substitua as chaves pelos IDs reais gerados no seu banco
     const localImages: Record<string, string> = {
         "4xmSmhkRPw60BaHTBplN": "/bolodechocolate.png",
         "Vj3uoWiYqIeyyauvxqfP": "/bolodelimao.png",
@@ -15,7 +23,6 @@ export default async function CardsProducts() {
         "HLh9oRtWMVEk6eoPmzei": "/bolodechocolatebranco.png",
     };
 
-    // Imagem padrão caso o ID não exista no objeto acima
     const defaultImage = "/produtos/placeholder-cake.png";
 
     return (
@@ -33,14 +40,15 @@ export default async function CardsProducts() {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8">
-                    {products.map((product: any) => {
-                        // Verifica se existe imagem local cadastrada para o ID desse produto
+                    {products.map((product) => {
                         const productImage = localImages[product.id] || defaultImage;
 
-                        // Formatação simples do preço caso ele venha como number puro do Firebase
-                        const formattedPrice = typeof product.preco === 'number'
-                            ? product.preco.toLocaleString('pt-BR', { minimumFractionDigits: 2 })
-                            : product.preco;
+                        const formattedPrice =
+                            typeof product.preco === 'number'
+                                ? product.preco.toLocaleString('pt-BR', { minimumFractionDigits: 2 })
+                                : Number.parseFloat(product.preco).toLocaleString('pt-BR', {
+                                    minimumFractionDigits: 2,
+                                });
 
                         return (
                             <div key={product.id} className="group flex flex-col justify-between bg-white rounded-2xl border border-black/5 overflow-hidden transition-all duration-300 hover:shadow-[0_10px_30px_rgba(0,0,0,0.05)] hover:border-black/10">
@@ -66,7 +74,7 @@ export default async function CardsProducts() {
                                         </div>
 
                                         <p className="text-xs text-black/60 font-medium leading-relaxed line-clamp-2 min-h-8">
-                                            {product.descricao}
+                                            {product.descricao || "Preparado com ingredientes selecionados de forma 100% artesanal."}
                                         </p>
                                     </div>
                                 </div>

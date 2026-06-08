@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/layout/Header/Header";
 import Chatbot from "@/components/layout/Messeger/Messeger";
@@ -69,7 +68,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={''}>
       <Header />
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="w-full h-full flex flex-col">{children}</body>
       <Chatbot />
     </html>
   );

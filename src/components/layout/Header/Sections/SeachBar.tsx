@@ -114,9 +114,10 @@ export default function SearchBar() {
                         <ul className="space-y-1">
                             {results.map((produto) => {
                                 // Força a formatação caso venha número puro do banco
-                                const priceValue = typeof produto.preco === 'number'
-                                    ? produto.preco
-                                    : parseFloat(produto.preco) || 0;
+                                const priceValue =
+                                    typeof produto.preco === 'number'
+                                        ? produto.preco
+                                        : Number.parseFloat(produto.preco) || 0;
 
                                 return (
                                     <li key={produto.id}>

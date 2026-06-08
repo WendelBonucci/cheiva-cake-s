@@ -6,11 +6,10 @@ import CardsProducts from "./Sections/Cards/CardsProducts"
 
 export default function HomeMain() {
     return (
-        <main className="flex flex-col">
+        <main className="w-full h-full flex flex-col overflow-hidden">
             <Carousel />
             <InformationBar />
             <ContentIlustrative />
-            
             <CardsProducts />
         </main>
     )
