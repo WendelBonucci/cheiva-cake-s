@@ -68,8 +68,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={''}>
-      <Header />
       <body className="w-full h-full flex flex-col">{children}</body>
+      <Header />
       <Chatbot />
       <Footer />
     </html>

@@ -19,7 +19,7 @@ interface ProductPageProps {
 
 export default async function ProductMain({ params }: ProductPageProps) {
     const resolvedParams = await params;
-    const productId = resolvedParams.id;
+    const productId = resolvedParams.id || "4xmSmhkRPw60BaHTBplN";
 
     // Busca os produtos e tipa o retorno explicitamente como um array de ProductType
     const products = (await getProducts()) as ProductType[];
