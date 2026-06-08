@@ -1,6 +1,7 @@
 import "./globals.css";
 import Header from "@/components/layout/Header/Header";
 import Chatbot from "@/components/layout/Messeger/Messeger";
+import Footer from "@/components/layout/Footer/Footer";
 
 export const metadata = {
   title: "Cheiva Cake'S | Confeitaria de Bolos, Doces e Sobremesas",
@@ -70,6 +71,7 @@ export default function RootLayout({
       <Header />
       <body className="w-full h-full flex flex-col">{children}</body>
       <Chatbot />
+      <Footer />
     </html>
   );
 }
