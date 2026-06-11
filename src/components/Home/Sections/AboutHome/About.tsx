@@ -12,7 +12,7 @@ export default function About() {
                     <div className="lg:col-span-7 flex flex-col gap-6 order-2 lg:order-1">
                         
                         <div className="flex flex-col gap-2">
-                            <span className="text-xs font-bold tracking-[0.2em] text-green uppercase block">Nossa Essência</span>
+                            <span className="text-xs font-bold tracking-[0.2em] text-yellow uppercase block">Nossa Essência</span>
                             <h2 className="text-3xl md:text-5xl font-black text-black tracking-tight">Sobre Nossa Confeitaria</h2>
                             <div className="h-1 w-16 bg-beige mt-2 rounded-full" />
                         </div>
@@ -24,13 +24,13 @@ export default function About() {
                             <p>
                                 Trabalhamos com os melhores ingredientes do mercado para garantir qualidade em cada criação. Nosso propósito é oferecer bolos e sobremesas personalizados que vão além da beleza, proporcionando um sabor único e marcante para as suas comemorações. Afinal, não basta apenas encantar os olhos, é essencial conquistar o paladar.
                             </p>
-                            <p className="text-black font-semibold bg-beige/20 p-4 rounded-xl border-l-4 border-green">
+                            <p className="text-black font-semibold bg-beige/20 p-4 rounded-xl border-l-4 border-yellow">
                                 Quer conhecer mais sobre a nossa história ou experimentar nossos deliciosos bolos e sobremesas? Não perca tempo! Solicite seu orçamento agora mesmo e descubra como podemos tornar sua comemoração ainda mais especial.
                             </p>
                         </div>
 
                         <div className="pt-2">
-                            <Link href="#" className="inline-flex items-center justify-center gap-2 border-green hover:bg-green/90 text-white font-bold text-sm tracking-wide py-4 px-8 rounded-xl shadow-[0_4px_15px_rgba(31,166,90,0.15)] transition-all duration-200 hover:scale-[1.01] group">
+                            <Link href="#" className=" bg-yellow inline-flex items-center justify-center gap-2 border-green hover:bg-green/90 text-white font-bold text-sm tracking-wide py-4 px-8 rounded-xl shadow-[0_4px_15px_rgba(31,166,90,0.15)] transition-all duration-200 hover:scale-[1.01] group">
                                 <span>Solicitar Orçamento</span>
                                 <FiArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
                             </Link>

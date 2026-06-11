@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header/Header";
 import Chatbot from "@/components/layout/Messeger/Messeger";
 import Footer from "@/components/layout/Footer/Footer";
+import LoadingScreen from "@/components/layout/Loanding/Loanding";
 
 export const metadata = {
   title: "Cheiva Cake'S | Confeitaria de Bolos, Doces e Sobremesas",
@@ -72,6 +73,7 @@ export default function RootLayout({
       <Header />
       <Chatbot />
       <Footer />
+      <LoadingScreen />
     </html>
   );
 }
