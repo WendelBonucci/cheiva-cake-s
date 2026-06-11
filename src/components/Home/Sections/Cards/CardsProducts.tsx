@@ -21,6 +21,10 @@ export default async function CardsProducts() {
         "Vj3uoWiYqIeyyauvxqfP": "/bolodelimao.png",
         "pdNbqvN8SIeYFRzu8WV7": "/bolodemorango.png",
         "HLh9oRtWMVEk6eoPmzei": "/bolodechocolatebranco.png",
+        "2Y57eQdPBCPwjQvdyfB1": "/bolokitkat.png",
+        "6YXAPo4a5tPP3cSkET1m": "/pudim.png",
+        "GpiFsumGRspl7wMTBqjl": "/deliciademorango.png",
+        "L3RoeNpc3x1PdUpiaQew": "/deliciaabacaxi.png",
     };
 
     const defaultImage = "/produtos/placeholder-cake.png";

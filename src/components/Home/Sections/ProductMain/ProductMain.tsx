@@ -32,10 +32,14 @@ export default async function ProductMain({ params }: ProductPageProps) {
         "Vj3uoWiYqIeyyauvxqfP": "/bolodelimao.png",
         "pdNbqvN8SIeYFRzu8WV7": "/bolodemorango.png",
         "HLh9oRtWMVEk6eoPmzei": "/bolodechocolatebranco.png",
+        "2Y57eQdPBCPwjQvdyfB1": "/bolokitkat.png",
+        "6YXAPo4a5tPP3cSkET1m": "/pudim.png",
+        "GpiFsumGRspl7wMTBqjl": "/deliciademorango.png",
+        "L3RoeNpc3x1PdUpiaQew": "/deliciaabacaxi.png",
     };
 
     const productImage = localImages[productId] || "/produtos/placeholder-cake.png";
-    const whatsappNumber = "5511999999999";
+    const whatsappNumber = "5585997276499";
 
     if (!product) {
         return (
