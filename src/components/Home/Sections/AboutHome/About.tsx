@@ -19,7 +19,7 @@ export default function About() {
 
                         <div className="flex flex-col gap-4 text-sm md:text-base text-black/70 font-medium leading-relaxed">
                             <p>
-                                Fundada em 2019, a <span className="text-black font-bold">Cheiva Cake's</span> nasceu com um propósito único: criar bolos personalizados para todos os tipos de celebração. Seja para aniversários, casamentos ou momentos especiais, nossa missão é transformar cada comemoração em uma experiência inesquecível, oferecendo produtos de qualidade, bom gosto e atenção aos mínimos detalhes.
+                                Fundada em 2021, a <span className="text-black font-bold">Cheiva Cake's</span> nasceu com um propósito único: criar bolos personalizados para todos os tipos de celebração. Seja para aniversários, casamentos ou momentos especiais, nossa missão é transformar cada comemoração em uma experiência inesquecível, oferecendo produtos de qualidade, bom gosto e atenção aos mínimos detalhes.
                             </p>
                             <p>
                                 Trabalhamos com os melhores ingredientes do mercado para garantir qualidade em cada criação. Nosso propósito é oferecer bolos e sobremesas personalizados que vão além da beleza, proporcionando um sabor único e marcante para as suas comemorações. Afinal, não basta apenas encantar os olhos, é essencial conquistar o paladar.
